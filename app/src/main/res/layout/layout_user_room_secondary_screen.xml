@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:padding="10dp">
+
+    <com.cn.superearman.widget.UserTrackView
+        android:id="@+id/qn_secondary_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/qn_secondary_two"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.cn.superearman.widget.UserTrackView
+        android:id="@+id/qn_secondary_two"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/qn_secondary_three"
+        app:layout_constraintStart_toEndOf="@+id/qn_secondary_one"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.cn.superearman.widget.UserTrackView
+        android:id="@+id/qn_secondary_three"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/qn_secondary_four"
+        app:layout_constraintStart_toEndOf="@+id/qn_secondary_two"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.cn.superearman.widget.UserTrackView
+        android:id="@+id/qn_secondary_four"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/qn_secondary_three"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.cn.superearman.widget.UserTrackView
+        android:id="@+id/qn_secondary_five"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/qn_secondary_one"
+        app:layout_constraintStart_toStartOf="@+id/qn_secondary_one"
+        app:layout_constraintTop_toBottomOf="@+id/qn_secondary_one" />
+
+    <com.cn.superearman.widget.UserTrackView
+        android:id="@+id/qn_secondary_six"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/qn_secondary_two"
+        app:layout_constraintStart_toStartOf="@+id/qn_secondary_two"
+        app:layout_constraintTop_toBottomOf="@+id/qn_secondary_two" />
+
+
+    <com.cn.superearman.widget.UserTrackView
+        android:id="@+id/qn_secondary_seven"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/qn_secondary_three"
+        app:layout_constraintStart_toStartOf="@+id/qn_secondary_three"
+        app:layout_constraintTop_toBottomOf="@+id/qn_secondary_three" />
+
+
+    <com.cn.superearman.widget.UserTrackView
+        android:id="@+id/qn_secondary_eight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/qn_secondary_four"
+        app:layout_constraintStart_toStartOf="@+id/qn_secondary_four"
+        app:layout_constraintTop_toBottomOf="@+id/qn_secondary_four" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_pick_up"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/blue1296db"
+        android:minWidth="120dp"
+        android:text="@string/pack_up"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qn_secondary_eight" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

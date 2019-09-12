@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SuperEarMan</string>
+    <string name="input_nick_name">请输入昵称</string>
+    <string name="begin_use">开始试用</string>
+    <string name="input_room_name">请输入房间号</string>
+    <string name="ear_man">耳朵人</string>
+    <string name="enlightenment_video">启蒙视频</string>
+    <string name="interpretation_of_works">作品讲解</string>
+    <string name="classroom_exercises">课堂练习</string>
+    <string name="task">作业</string>
+    <string name="mute">静音</string>
+    <string name="whiteboard">白板</string>
+    <string name="see_each_other">同学互见</string>
+    <string name="class_begins">开课</string>
+    <string name="pack_up">收起</string>
+</resources>

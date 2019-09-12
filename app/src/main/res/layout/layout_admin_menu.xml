@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/shape_white_background"
+        android:paddingBottom="15dp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_enlightenment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:drawableTop="@drawable/icon_look_back"
+            android:drawablePadding="4dp"
+            android:text="@string/enlightenment_video"
+            android:textColor="@color/backgroundColor"
+            app:layout_constraintEnd_toStartOf="@+id/tv_interpretation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_interpretation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:drawableTop="@drawable/icon_interpretation_of_works"
+            android:drawablePadding="4dp"
+            android:text="@string/interpretation_of_works"
+            android:textColor="@color/backgroundColor"
+            app:layout_constraintEnd_toStartOf="@+id/tv_classroom"
+            app:layout_constraintStart_toEndOf="@+id/tv_enlightenment"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_classroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:drawableTop="@drawable/icon_classroom_exercises"
+            android:drawablePadding="4dp"
+            android:text="@string/classroom_exercises"
+            android:textColor="@color/backgroundColor"
+            app:layout_constraintEnd_toStartOf="@+id/tv_task"
+            app:layout_constraintStart_toEndOf="@+id/tv_interpretation"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:drawableTop="@drawable/icon_task"
+            android:drawablePadding="4dp"
+            android:text="@string/task"
+            android:textColor="@color/backgroundColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_classroom"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_mute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:drawableTop="@drawable/icon_mute"
+            android:drawablePadding="4dp"
+            android:text="@string/mute"
+            android:textColor="@color/backgroundColor"
+            app:layout_constraintEnd_toEndOf="@+id/tv_enlightenment"
+            app:layout_constraintStart_toStartOf="@+id/tv_enlightenment"
+            app:layout_constraintTop_toBottomOf="@+id/tv_enlightenment" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_whiteboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:drawableTop="@drawable/icon_curriculum_whiteboard"
+            android:drawablePadding="4dp"
+            android:text="@string/whiteboard"
+            android:textColor="@color/backgroundColor"
+            app:layout_constraintEnd_toEndOf="@+id/tv_interpretation"
+            app:layout_constraintStart_toStartOf="@+id/tv_interpretation"
+            app:layout_constraintTop_toBottomOf="@+id/tv_interpretation" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_see_each_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:drawableTop="@drawable/icon_see_each_other"
+            android:drawablePadding="4dp"
+            android:text="@string/see_each_other"
+            android:textColor="@color/backgroundColor"
+            app:layout_constraintEnd_toEndOf="@+id/tv_classroom"
+            app:layout_constraintStart_toStartOf="@+id/tv_classroom"
+            app:layout_constraintTop_toBottomOf="@+id/tv_classroom" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_pack_up_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_semicircle_pack_up"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="收\n起"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

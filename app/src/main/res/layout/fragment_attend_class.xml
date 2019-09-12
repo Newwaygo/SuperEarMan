@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:roundedCornerRadius="15dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_curriculum_step"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:text="第一课"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_cover" />
+
+    <View
+        android:id="@+id/view_look_back"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/shape_white_circle"
+        android:gravity="center"
+        android:textColor="@color/blue1296db"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_cover"
+        app:layout_constraintStart_toStartOf="@+id/iv_cover" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/atv_look_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/icon_look_back"
+        android:gravity="center"
+        android:text="回看"
+        android:textColor="@color/blue1296db"
+        app:layout_constraintBottom_toBottomOf="@+id/view_look_back"
+        app:layout_constraintEnd_toEndOf="@+id/view_look_back"
+        app:layout_constraintStart_toStartOf="@+id/view_look_back"
+        app:layout_constraintTop_toTopOf="@+id/view_look_back" />
+
+    <View
+        android:id="@+id/view_task"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/shape_white_circle"
+        android:gravity="center"
+        android:textColor="@color/blue1296db"
+        app:layout_constraintBottom_toBottomOf="@+id/view_look_back"
+        app:layout_constraintStart_toEndOf="@+id/view_look_back"
+        app:layout_constraintTop_toTopOf="@+id/view_look_back" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/atv_look_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/icon_task"
+        android:gravity="center"
+        android:text="作业"
+        android:textColor="@color/blue1296db"
+        app:layout_constraintBottom_toBottomOf="@+id/view_task"
+        app:layout_constraintEnd_toEndOf="@+id/view_task"
+        app:layout_constraintStart_toStartOf="@+id/view_task"
+        app:layout_constraintTop_toTopOf="@+id/view_task" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:text="梵高出生于1853年3月30日
+         荷兰乡村津德尔特的一个新教牧师家庭，早年的他做过职员和商行经纪人，还当过矿区的传教士最后他投身于绘画。他早期画风写实，受到荷兰传统绘画及法国写实主义画派的影响。1886年，他来到巴黎，结识印象派和新印象派画家，并接触到日本浮世绘的作品，视野的扩展使其画风巨变，他的画，开始由早期的沉闷、昏暗，而变得简洁、明亮和色彩强烈。1888年，来到法国南部小镇阿尔，已经摆脱印象派及新印象派的影响，走到了与之背道而驰的境地。同年与高更交往，但由于二人性格的冲突和观念的分歧，合作很快便告失败。此后，梵高的疯病（有人记载是“癫痫病”）时常发作，但神志清醒时他仍然坚持作画，1890年7月，
+         他在精神错乱中开枪自杀，年仅37岁"
+        android:textColor="@android:color/white"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view_look_back"
+        app:layout_constraintEnd_toEndOf="@+id/iv_cover"
+        app:layout_constraintStart_toStartOf="@+id/iv_cover" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_curriculum_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="文森特·梵高"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_content"
+        app:layout_constraintEnd_toEndOf="@+id/iv_cover"
+        app:layout_constraintStart_toStartOf="@+id/iv_cover" />
+
+     <androidx.appcompat.widget.AppCompatTextView
+         android:id="@+id/tv_join_class"
+         android:layout_width="72dp"
+         android:layout_height="72dp"
+         app:layout_constraintBottom_toBottomOf="@+id/iv_cover"
+         app:layout_constraintEnd_toEndOf="@+id/iv_cover"
+         android:background="@drawable/shape_white_circle"
+         android:text="@string/class_begins"
+         android:gravity="center"
+         android:textColor="@color/blue1296db"
+         android:layout_marginEnd="15dp"
+         android:layout_marginBottom="15dp"
+         />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
